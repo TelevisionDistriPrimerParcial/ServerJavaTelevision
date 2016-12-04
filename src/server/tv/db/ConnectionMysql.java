@@ -16,7 +16,7 @@ import java.sql.Statement;
  *
  * @author IVAN
  */
-public class Connection11g {
+public class ConnectionMysql {
 
     
     private Connection conexion;
@@ -25,7 +25,7 @@ public class Connection11g {
     private String Username;
     private String Password;
 
-    public Connection11g() {
+    public ConnectionMysql() {
         this.Driver_Class = "oracle.jdbc.OracleDriver";
         this.URL = "jdbc:oracle:thin:@10.1.0.113:1521:pas8";
         //this.Username = "userconsulta";
