@@ -26,10 +26,10 @@ public class ConnectionMysql {
     private String Password;
 
     public ConnectionMysql() {
-        this.Driver_Class = "oracle.jdbc.OracleDriver";
-        this.URL = "";
-        this.Username = "";
-        this.Password = "";
+        this.Driver_Class = "com.mysql.jdbc.Driver";
+        this.URL = "jdbc:mysql://localhost:3306/dbTelevision";
+        this.Username = "root";
+        this.Password = "123.456";
         this.conexion = conectar();
     }
 
