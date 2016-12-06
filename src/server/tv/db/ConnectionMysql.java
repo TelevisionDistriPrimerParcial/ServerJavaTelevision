@@ -5,7 +5,6 @@
  */
 package server.tv.db;
 
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -18,7 +17,6 @@ import java.sql.Statement;
  */
 public class ConnectionMysql {
 
-    
     private Connection conexion;
     private String Driver_Class;
     private String URL;
@@ -84,7 +82,7 @@ public class ConnectionMysql {
             sentencia = getConexion().createStatement(ResultSet.TYPE_FORWARD_ONLY, ResultSet.CONCUR_READ_ONLY);
             resultado = sentencia.executeQuery(sql);
         } catch (Exception e) {
-           // log.level.info("-> " + e.toString());
+            // log.level.info("-> " + e.toString());
         }
         return resultado;
     }
