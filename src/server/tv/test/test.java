@@ -6,6 +6,9 @@
 
 package server.tv.test;
 
+import server.tv.db.ServerTvCrud;
+import server.tv.map.Empleado;
+
 /**
  *
  * @author Luis
@@ -17,6 +20,8 @@ public class test {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Empleado emp = ServerTvCrud.findEmpleadoByUser("test_emp", "123.456");
+        System.out.println(">> "+emp.getEmpleadoNombre()+" "+emp.getEmpleadoApellido());
     }
     
 }
