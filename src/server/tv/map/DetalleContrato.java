@@ -1,5 +1,5 @@
 package server.tv.map;
-// Generated 03-dic-2016 13:57:40 by Hibernate Tools 3.6.0
+// Generated Dec 5, 2016 10:36:11 PM by Hibernate Tools 4.3.1
 
 
 
@@ -9,38 +9,39 @@ package server.tv.map;
 public class DetalleContrato  implements java.io.Serializable {
 
 
-     private Integer detalleContratoCodigo;
-     private int contratoCodigo;
-     private int planCodigo;
+     private int detalleContratoCodigo;
+     private Contrato contrato;
+     private Plan plan;
 
     public DetalleContrato() {
     }
 
-    public DetalleContrato(int contratoCodigo, int planCodigo) {
-       this.contratoCodigo = contratoCodigo;
-       this.planCodigo = planCodigo;
+    public DetalleContrato(int detalleContratoCodigo, Contrato contrato, Plan plan) {
+       this.detalleContratoCodigo = detalleContratoCodigo;
+       this.contrato = contrato;
+       this.plan = plan;
     }
    
-    public Integer getDetalleContratoCodigo() {
+    public int getDetalleContratoCodigo() {
         return this.detalleContratoCodigo;
     }
     
-    public void setDetalleContratoCodigo(Integer detalleContratoCodigo) {
+    public void setDetalleContratoCodigo(int detalleContratoCodigo) {
         this.detalleContratoCodigo = detalleContratoCodigo;
     }
-    public int getContratoCodigo() {
-        return this.contratoCodigo;
+    public Contrato getContrato() {
+        return this.contrato;
     }
     
-    public void setContratoCodigo(int contratoCodigo) {
-        this.contratoCodigo = contratoCodigo;
+    public void setContrato(Contrato contrato) {
+        this.contrato = contrato;
     }
-    public int getPlanCodigo() {
-        return this.planCodigo;
+    public Plan getPlan() {
+        return this.plan;
     }
     
-    public void setPlanCodigo(int planCodigo) {
-        this.planCodigo = planCodigo;
+    public void setPlan(Plan plan) {
+        this.plan = plan;
     }
 
 

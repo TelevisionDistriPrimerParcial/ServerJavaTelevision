@@ -1,5 +1,5 @@
 package server.tv.map;
-// Generated 03-dic-2016 13:57:40 by Hibernate Tools 3.6.0
+// Generated Dec 5, 2016 10:36:11 PM by Hibernate Tools 4.3.1
 
 
 
@@ -9,34 +9,43 @@ package server.tv.map;
 public class Empleado  implements java.io.Serializable {
 
 
-     private EmpleadoId id;
-     private int rolEmpleadoCodigo;
+     private int empleadoCodigo;
+     private RolEmpleado rolEmpleado;
+     private Usuario usuario;
      private String empleadoNombre;
      private String empleadoApellido;
 
     public Empleado() {
     }
 
-    public Empleado(EmpleadoId id, int rolEmpleadoCodigo, String empleadoNombre, String empleadoApellido) {
-       this.id = id;
-       this.rolEmpleadoCodigo = rolEmpleadoCodigo;
+    public Empleado(int empleadoCodigo, RolEmpleado rolEmpleado, Usuario usuario, String empleadoNombre, String empleadoApellido) {
+       this.empleadoCodigo = empleadoCodigo;
+       this.rolEmpleado = rolEmpleado;
+       this.usuario = usuario;
        this.empleadoNombre = empleadoNombre;
        this.empleadoApellido = empleadoApellido;
     }
    
-    public EmpleadoId getId() {
-        return this.id;
+    public int getEmpleadoCodigo() {
+        return this.empleadoCodigo;
     }
     
-    public void setId(EmpleadoId id) {
-        this.id = id;
+    public void setEmpleadoCodigo(int empleadoCodigo) {
+        this.empleadoCodigo = empleadoCodigo;
     }
-    public int getRolEmpleadoCodigo() {
-        return this.rolEmpleadoCodigo;
+    public RolEmpleado getRolEmpleado() {
+        return this.rolEmpleado;
     }
     
-    public void setRolEmpleadoCodigo(int rolEmpleadoCodigo) {
-        this.rolEmpleadoCodigo = rolEmpleadoCodigo;
+    public void setRolEmpleado(RolEmpleado rolEmpleado) {
+        this.rolEmpleado = rolEmpleado;
+    }
+    public Usuario getUsuario() {
+        return this.usuario;
+    }
+    
+    public void setUsuario(Usuario usuario) {
+        this.usuario = usuario;
     }
     public String getEmpleadoNombre() {
         return this.empleadoNombre;
